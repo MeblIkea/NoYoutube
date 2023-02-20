@@ -1,0 +1,24 @@
+{
+
+  "description": "Remove everything from the homepage of youtube, so you dont get lost, and you can still check your notifications.",
+  "manifest_version": 2,
+  "name": "Youtube is No MORE",
+  "version": "1.0",
+  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/beastify",
+  "icons": {
+    "48": "icon.png"
+  },
+
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "scripting"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/"],
+      "js": ["main.js"]
+    }
+  ]
+}
