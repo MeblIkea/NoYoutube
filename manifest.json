@@ -6,7 +6,7 @@
   "version": "1.0",
   "homepage_url": "https://github.com/MeblIkea/NoYoutube",
   "icons": {
-    "48": "icon.png"
+    "2048": "icon.png"
   },
 
   "content_scripts": [
