@@ -4,7 +4,7 @@
   "manifest_version": 2,
   "name": "Youtube is No MORE",
   "version": "1.0",
-  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/beastify",
+  "homepage_url": "https://github.com/MeblIkea/NoYoutube",
   "icons": {
     "48": "icon.png"
   },
