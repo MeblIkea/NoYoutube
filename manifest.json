@@ -9,12 +9,6 @@
     "48": "icon.png"
   },
 
-  "permissions": [
-    "activeTab",
-    "tabs",
-    "scripting"
-  ],
-
   "content_scripts": [
     {
       "matches": ["*://*.youtube.com/"],
