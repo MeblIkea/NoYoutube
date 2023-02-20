@@ -12,6 +12,7 @@
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/"],
+      "exclude_matches": ["https://www.youtube.com/playlist*"],
       "js": ["main.js"]
     }
   ]
