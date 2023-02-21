@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Popup Window</title>
     <style>
         body {
             background-color: red;
@@ -34,7 +34,7 @@
             border-radius: 5px;
             transition: .4s;
             text-align: center;
-            font-size: 15px;
+            font-size: 13px;
         }
 
         input:checked + .slider {
@@ -42,29 +42,42 @@
             background-color: white;
             color: black;
         }
+
+        .infos_button {
+            font-family: "DejaVu Sans", sans-serif;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
     <div class="bcontainer">
         <div class="btext">Disable Homepage Videos</div>
-        <label class="switch">
+        <label class="switch" id="dhomepage">
             <input type="checkbox">
             <span class="slider">Disabled</span>
         </label>
     </div>
-    <div class="bcontainer" style="margin-left: 20px;font-size: 15px">
+
+    <div class="bcontainer" style="margin-left: 20px;font-size: 15px;background-color: darkred">
         <div class="btext">Disable Shorts Suggestions</div>
-        <label class="switch">
+        <label class="switch" id="dshortssuggestions">
             <input type="checkbox">
-            <span class="slider">Disabled</span>
+            <span class="slider" style="font-size: 12px">Disabled</span>
         </label>
     </div>
+
     <div class="bcontainer">
         <div class="btext">Disable Shorts Button</div>
-        <label class="switch">
+        <label class="switch" id="dshortsbutton">
             <input type="checkbox">
             <span class="slider">Disabled</span>
         </label>
     </div>
+
+    <div>
+        <button class="infos_button" id="about">About</button>
+    </div>
+
+    <script src="popup.js"></script>
 </body>
 </html>
