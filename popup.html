@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: red;
+            color: white;
+            font-family: "DejaVu Sans", sans-serif;
+            font-weight: bold;
+        }
+
+        .bcontainer {
+            display: grid;
+            grid-template-columns: 1fr 0.3fr;
+            grid-gap: 10px;
+            margin-bottom: 5px;
+        }
+
+        .switch {
+            position: relative;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: darkred;
+            border: black solid 2px;
+            border-radius: 5px;
+            transition: .4s;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        input:checked + .slider {
+            border: lightslategray solid 2px;
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="bcontainer">
+        <div class="btext">Disable Homepage Videos</div>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider">Disabled</span>
+        </label>
+    </div>
+    <div class="bcontainer" style="margin-left: 20px;font-size: 15px">
+        <div class="btext">Disable Shorts Suggestions</div>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider">Disabled</span>
+        </label>
+    </div>
+    <div class="bcontainer">
+        <div class="btext">Disable Shorts Button</div>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider">Disabled</span>
+        </label>
+    </div>
+</body>
+</html>
