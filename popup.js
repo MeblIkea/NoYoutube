@@ -31,3 +31,15 @@ shorts_button_label.getElementsByTagName("input")[0].onclick = function () {
         shorts_button_label.getElementsByTagName("span")[0].innerText = "Disabled";
     }
 }
+
+let NoYtbPort;
+
+function connected(p) {
+  NoYtbPort = p;
+  NoYtbPort.postMessage({greeting: "hi there content script!"});
+}
+
+browser.runtime.onConnect.addListener(connected);
+browser.browserAction.onClicked.addListener(() => {
+  NoYtbPort.postMessage({greeting: "they clicked the button!"});
+});

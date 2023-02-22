@@ -29,3 +29,8 @@ waitForElm(".ytd-guide-section-renderer").then( function () {
         if (element.getAttribute("title") === "Shorts") {element.remove();console.log("Shorts button removed")}
     }
 });
+
+let NoYtbPort = browser.runtime.connect({name:"no-youtube"});
+NoYtbPort.onMessage.addListener((message) => {
+    console.log(message)
+})
