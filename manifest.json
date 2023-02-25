@@ -16,13 +16,17 @@
     }
   ],
   "permissions": [
-    "activeTab",
-    "tabs",
-    "activeTab"
+    "storage"
   ],
   "browser_action": {
     "default_icon": "icon.png",
     "default_title": "Youtube is No MORE",
     "default_popup": "popup.html"
+  },
+  "browser_specific_settings": {
+  "gecko": {
+    "id": "{4299b6eb-5c93-4121-ad9d-d20b23bc7f35}"
   }
+  }
+
 }

@@ -18,6 +18,14 @@
             margin-bottom: 5px;
         }
 
+        .bcontainer_alt {
+            margin-left: 20px;
+            font-size: 15px;
+            background-color: darkred;
+            border-radius: 5px;
+            padding-left: 3px;
+        }
+
         .switch {
             position: relative;
         }
@@ -35,6 +43,10 @@
             transition: .4s;
             text-align: center;
             font-size: 13px;
+        }
+
+        .slider_alt {
+            font-size: 12px;
         }
 
         input:checked + .slider {
@@ -58,11 +70,11 @@
         </label>
     </div>
 
-    <div class="bcontainer" style="margin-left: 20px;font-size: 15px;background-color: darkred">
+    <div class="bcontainer bcontainer_alt">
         <div class="btext">Disable Shorts Suggestions</div>
         <label class="switch" id="dshortssuggestions">
             <input type="checkbox">
-            <span class="slider" style="font-size: 12px">Disabled</span>
+            <span class="slider slider_alt">Disabled</span>
         </label>
     </div>
 
